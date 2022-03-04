@@ -56,19 +56,24 @@ reader.question("\nPassword Requirements:\n"
         // console.log(`constraint1 = ${constraint1}\nconstraint2 = ${constraint2}\nconstraint3 = ${constraint3}`)
     } 
     if (constraint1 === true && constraint2 === true && constraint3 === true && constraint4 === true && constraint5 === true) {
-        console.log(`\nSuccess`)
+        if (input.length < 15) {
+            console.log(`\nSuccess`)
+        } else {
+            console.log(`\nSuccess. Your password is strong. Nice.`)
+        }
     } else {
         console.log(`\n`)
+        console.log(`ERROR SETTING PASSWORD: Your password still needs:`)
     } if (constraint1 === false) {
-        console.log(`Error setting password: You need an uppercase letter in your password.`)
+        console.log(`An uppercase letter`)
     } if (constraint2 === false) {
-        console.log(`Error setting password: You need a lowercase letter in your password.`)
+        console.log(`A lowercase letter`)
     } if (constraint3 === false) {
-        console.log(`Error setting password: Your password must be at least 10 characters.`)
+        console.log(`At least 10 characters`)
     } if (constraint4 === false) {
-        console.log(`Error setting password: Your password needs a number.`)
+        console.log(`A number`)
     } if (constraint5 === false) {
-        console.log(`Error setting password: Your password needs a special character.`)
+        console.log(`A special character`)
     }
     console.log(`\n`)
 
