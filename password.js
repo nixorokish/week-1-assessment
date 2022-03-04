@@ -19,7 +19,7 @@ let constraint3 = false
 let constraint4 = false
 let constraint5 = false
 
-specialChar = `!@#$%^&*()-+.'"?<>+_`
+specialChar = `!@#$%^&*()-+.'"?<>+_~{}[]`
 
 reader.question("\nPassword Requirements:\n"
 + "1. At least one uppercase char\n"
@@ -27,10 +27,8 @@ reader.question("\nPassword Requirements:\n"
 + "3. At least 10 characters\n"
 + "4. At least one number\n"
 + "5. At least one special character\n\n"
-+ "Set your password:", function(input){
++ "Set your password: ", function(input){
     for (i = 0; i < input.length; i++) {
-        // console.log(input[i])
-        // console.log(input[i].toUpperCase())
         if (input[i] === input[i].toUpperCase()) {
             constraint1 = true
         }
@@ -44,10 +42,6 @@ reader.question("\nPassword Requirements:\n"
             constraint4 = true
         }
         for (let i = 0; i < input.length; i++) {
-            // console.log(`length: `, specialChar.length)
-            // console.log(`i: `, i)
-            // console.log(`input[i]: `, input[i])
-            // console.log(`specialChar[i]: `, specialChar[i])
             if (specialChar.includes(input[i])) {
                 constraint5 = true
             }
@@ -63,7 +57,7 @@ reader.question("\nPassword Requirements:\n"
         }
     } else {
         console.log(`\n`)
-        console.log(`ERROR SETTING PASSWORD: Your password still needs:`)
+        console.log(`ERROR SETTING PASSWORD. Your password still needs:`)
     } if (constraint1 === false) {
         console.log(`An uppercase letter`)
     } if (constraint2 === false) {
@@ -77,22 +71,5 @@ reader.question("\nPassword Requirements:\n"
     }
     console.log(`\n`)
 
-    // console.log(`Constraints:\n1:${constraint1}\n2:${constraint2}\n3:${constraint3}\n4:${constraint4}\n5:${constraint5}`)
-    
-    // if (input.length >= 10 && ) {
-    //     console.log(`Success`)
-    // } else {
-    //     console.log(`\nError: Password needs to be at least 10 characters long`)
-    // }
- 
     reader.close()
 })
-
-// let hello = `Hello`
-// console.log(hello)
-// let upperHello = hello.toUpperCase
-// console.log(upperHello)
-
-// let x = 'f'
-// let y = isNaN(x)
-// console.log(y)
