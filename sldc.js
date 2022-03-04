@@ -35,4 +35,9 @@ let impl =  `The phase in which the system is actually built (or purchased, in t
 let test = `Now it must be tested to make sure that there aren’t any bugs and that the end-user experience will not negatively be affected at any point.`
 let maint = `Developers must now move into a maintenance mode and begin practicing any activities required to handle issues reported by end-users. Furthermore, developers are responsible for implementing any changes that the software might need after deployment.`
 
-
+console.log(`\n${SDLC[0]}: ${plan}\n\n`
+            + `${SDLC[1]}: ${analys}\n\n`
+            + `${SDLC[2]}: ${design}\n\n`
+            + `${SDLC[3]}: ${impl}\n\n`
+            + `${SDLC[4]}: ${test}\n\n`
+            + `${SDLC[5]}: ${maint}\n`)
