@@ -10,6 +10,13 @@
 */
 
 //CODE HERE
+let sep = `------------------`
+console.log(sep)
+console.log(`Problem 1:`)
+let gitDefinition = `git is a version control system for files`
+console.log(`gitDefinition = ${gitDefinition}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +25,11 @@
 */
 
 //CODE HERE
+console.log(`Problem 2:`)
+let gitHubDefinition = `GitHub is a hub for storing and making available the files that result from git version control`
+console.log(`gitHubDefinition = ${gitHubDefinition}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +38,11 @@
 */
 
 //CODE HERE
+console.log(`Problem 3:`)
+let gitInitDefinition = `git init is a command that creats a local git repository`
+console.log(`gitInitDefinition = ${gitInitDefinition}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,6 +51,11 @@
 */
 
 //CODE HERE
+console.log(`Problem 4:`)
+let gitCloneDefinition = `git clone is a command that takes a URL as an argument and clones a repository from GitHub to your local machine`
+console.log(`gitCloneDefinition = ${gitCloneDefinition}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,6 +64,9 @@
 */
 
 //CODE HERE
+
+console.log(`Problem 5:`)
+let gitStatusDefinition = `git status`
 
 //////////////////PROBLEM 6////////////////////
 /*
