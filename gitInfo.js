@@ -66,7 +66,10 @@ console.log(sep)
 //CODE HERE
 
 console.log(`Problem 5:`)
-let gitStatusDefinition = `git status`
+let gitStatusDefinition = `git status is a command that describes the repository and any changes that have not yet been committed`
+console.log(`gitStatusDefinition = ${gitStatusDefinition}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -78,6 +81,12 @@ let gitStatusDefinition = `git status`
 */
 
 //CODE HERE
+console.log(`Problem 6:`)
+let gitAddDefinition = `git add adds files to be tracked in the local repository`
+let gitAddCode = `git add .`
+console.log(`gitAddDefinition = ${gitAddDefinition} \ngitAddCode = ${gitAddCode}`)
+
+console.log(sep)
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -89,7 +98,12 @@ let gitStatusDefinition = `git status`
 */
 
 //CODE HERE
+console.log(`Problem 7:`)
+let gitCommitDefinition = `git commit creats a snapshot of the files that are being tracked`
+let gitCommitCode = `git commit -am "initial commit"`
+console.log(`gitCommitDefinition = ${gitCommitDefinition} \ngitCommitCode = ${gitCommitCode}`)
 
+console.log(sep)
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -98,3 +112,8 @@ let gitStatusDefinition = `git status`
 */
 
 //CODE HERE
+console.log(`Problem 8:`)
+let gitPushDefinition = `git push pushes your committed changes from your local repository to your GitHub respository`
+console.log(`gitPushDefinition = ${gitPushDefinition}`)
+
+console.log(sep)
