@@ -55,7 +55,7 @@ console.log(sep)
 
 //CODE HERE
 console.log(`Problem 5:`)
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log(faveNum)
 }
 

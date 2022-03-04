@@ -19,13 +19,14 @@ let constraint3 = false
 let constraint4 = false
 let constraint5 = false
 
-specialChar = [`!@#$%^&*()-+.'"?<>+_`]
+specialChar = `!@#$%^&*()-+.'"?<>+_`
 
 reader.question("\nPassword Requirements:\n"
 + "1. At least one uppercase char\n"
 + "2. At least one lowercase char\n"
 + "3. At least 10 characters\n"
-+ "4. At least one number\n\n"
++ "4. At least one number\n"
++ "5. At least one special character\n\n"
 + "Set your password:", function(input){
     for (i = 0; i < input.length; i++) {
         // console.log(input[i])
@@ -42,10 +43,19 @@ reader.question("\nPassword Requirements:\n"
         if (isNaN(input[i]) === false) {
             constraint4 = true
         }
+        for (let i = 0; i < input.length; i++) {
+            // console.log(`length: `, specialChar.length)
+            // console.log(`i: `, i)
+            // console.log(`input[i]: `, input[i])
+            // console.log(`specialChar[i]: `, specialChar[i])
+            if (specialChar.includes(input[i])) {
+                constraint5 = true
+            }
+        }
 
         // console.log(`constraint1 = ${constraint1}\nconstraint2 = ${constraint2}\nconstraint3 = ${constraint3}`)
     } 
-    if (constraint1 === true && constraint2 === true && constraint3 === true && constraint4 === true) {
+    if (constraint1 === true && constraint2 === true && constraint3 === true && constraint4 === true && constraint5 === true) {
         console.log(`\nSuccess`)
     } else {
         console.log(`\n`)
@@ -57,8 +67,12 @@ reader.question("\nPassword Requirements:\n"
         console.log(`Error setting password: Your password must be at least 10 characters.`)
     } if (constraint4 === false) {
         console.log(`Error setting password: Your password needs a number.`)
+    } if (constraint5 === false) {
+        console.log(`Error setting password: Your password needs a special character.`)
     }
     console.log(`\n`)
+
+    // console.log(`Constraints:\n1:${constraint1}\n2:${constraint2}\n3:${constraint3}\n4:${constraint4}\n5:${constraint5}`)
     
     // if (input.length >= 10 && ) {
     //     console.log(`Success`)
